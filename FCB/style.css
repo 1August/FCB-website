@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    /*background: rgb(63,94,251);*/
+    /*background: linear-gradient(135deg, rgba(63,94,251,.8) 0%, rgba(220,20,60,.8) 100%) no-repeat;*/
+    font-family: Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    margin: 1.4rem 0;
+    font-family: "Times New Roman";
+}
+h1{
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+h2{
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4, h5, h6{
+    font-size: 1.3rem;
+}
+hr{
+    height: 1px;
+    border: none;
+    background-color: #000;
+}
+hr.m1{
+    margin: 1rem 0;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.mine{
+    text-shadow: 3px 2px 1px #fff;
+    position: fixed;
+    right: 1rem;
+    top: 30%;
+    writing-mode: vertical-lr;
+    z-index: 100;
+}
+
+
+#nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li+li{
+    margin-left: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color: #4B0C19;
+}
+a:hover{
+    text-decoration: underline;
+}
+.left a{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+img.logo{
+    width: 2rem;
+}
+span.brand{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+#offer{
+    position: relative;
+}
+.offerImg{
+    width: 100%;
+}
+.madeBy{
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    right: .7rem;
+    bottom: .7rem;
+}
+
+
+#main section{
+    padding: 2rem 0;
+}
+.shortAbout{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#main .photo{
+    width: calc(100% / 4)%;
+}
+#main .info{
+    width: calc(3 * 100% / 4);
+    padding: 1rem;
+    text-align: justify;
+}
+#main .info p+p{
+    margin: 1rem 0;
+}
+.teamphoto1{
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.moreInfo{
+    text-align: center;
+}
+.moreInfo img{
+    margin: 1rem 0;
+    width: 70%;
+}
+
+
+.players h2{
+    text-align: center;
+}
+.playersWrapper{
+    display: grid;
+    grid-gap: .7rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.player img{
+    width: 100%;
+}
+.player p{
+    margin: .5rem 0;
+}
+
+
+.matches{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+}
+.matches table{
+    width: 100%;
+    border-spacing: .7rem .5rem;
+    border: 1px solid #000;
+}
+.matches th{
+    text-align: center;
+}
+.matches th, .matches td{
+    padding: .2rem .5rem;
+}
+.matches th:first-child, .matches td:first-child{
+    text-align: right;
+}
+.matches th:nth-child(2), td:nth-child(2){
+    text-align: left;
+}
+.matches th:last-child, .matches td:last-child{
+    text-align: left;
+}
+
+.photoGallery{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.photoGallery img{
+    width: calc((100% - 2rem) / 3);
+}
+
+
+form{
+    padding: 1rem .5rem;
+    display: grid;
+    grid-template-areas:
+    "name   comment comment comment"
+    "email  comment comment comment"
+    "submit comment comment comment";
+    background-color: #dcdcdc;
+    place-items: center;
+    border: 2px solid #000;
+}
+form input, form textarea{
+    box-shadow: inset 3px 3px 5px rgba(200, 200, 200, .5), inset -3px -3px 5px rgba(20, 20, 20, .2);
+    border-radius: 5px;
+}
+form input{
+    margin: 1rem;
+}
+form input{
+    padding: .5rem;
+}
+form label:first-child{
+    grid-area: name;
+}
+form label:last-child{
+    grid-area: email;
+}
+form textarea{
+    padding: 1rem;
+    grid-area: comment;
+    width: calc(100% - 2rem);
+    resize: none;
+}
+form button{
+    padding: .5rem 1rem;
+    grid-area: submit;
+    width: min-content;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    background-color: transparent;
+}
+form button:hover{
+    background-color: rgba(16, 16, 16, .05);
+}
+
+
+.photoLine img{
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#footer{
+    padding: 2rem 0;
+}
+#footer ul{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+#footer ul li{
+    text-align: center;
+    align-self: center;
+}
+#footer ul a{
+
+}
+.bottomLogo{
+    width: 1rem;
+}
+
+.copyright{
+    float: right;
+    padding: 1rem 0;
+}
